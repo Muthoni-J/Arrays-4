@@ -2,6 +2,8 @@ fun main(){
     people("Joan","Mollen","Whitney","Ashley")
     place()
     numbers()
+     var x = names(arrayOf("Tonny","Husni","Joe"))
+    println(x)
     }
 
 //Function that takes in 4 strings and create an array
@@ -31,4 +33,8 @@ fun numbers() {
         println(index)
         println(ascending)
     }
+fun names(name: Array<String>): String{
+    var name = name.contentToString()
+    return name
+}
 
