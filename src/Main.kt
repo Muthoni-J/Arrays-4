@@ -2,11 +2,12 @@ fun main(){
     people("Joan","Mollen","Whitney","Ashley")
     place()
     numbers()
-    var x = names(arrayOf("Tonny","Husni","Joe"))
-    println(x)
-    }
+    var name = names(name1 = "Tonny","Husni","Joe")
+    println(name.contentToString())
 
-//Function that takes in 4 strings and create an array
+}
+ //function that takes in 4 strings  and creates an array out of them then
+ //prints out the array
 fun people(a:String,b:String,c:String,d:String){
     var p= arrayOf(a,b,c,d)
     println(p.contentToString())
@@ -28,13 +29,15 @@ fun numbers() {
     var numbers = arrayOf(32, 17, 4, 213, 78, 43, 90, 31, 3, 73, 11, 158, 62)
     var sum = numbers[1] + numbers[4]
     var index = numbers.indexOf(158)
-   var ascending=numbers.sorted()
-        println(sum)
-        println(index)
-        println(ascending)
-    }
-// function that takes in 3 names and returns a string array containing all 3 names.
-fun names(name: Array<String>): String{
-    var name = name.contentToString()
-    return name
+    var ascending=numbers.sorted()
+    println(sum)
+    println(index)
+    println(ascending)
 }
+// function that takes in 3 names and returns a string array containing
+//all 3 names.
+fun names(name1:String,name2:String,name3:String):Array<String>{
+    var names = (arrayOf(name1,name2,name3))
+    return names
+}
+
