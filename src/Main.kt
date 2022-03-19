@@ -39,5 +39,6 @@ fun numbers() {
 fun names(name1:String,name2:String,name3:String):Array<String>{
     var names = (arrayOf(name1,name2,name3))
     return names
+
 }
 
